@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="小🐎不肥的个人学术主页">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shuailei Ma · Homepage">
+  <meta property="og:description" content="Final-year Ph.D. student working on visual generative foundation models, world models, VLA, and VA.">
+  <meta property="og:url" content="https://xiaomabufei.github.io/">
+  <meta property="og:image" content="https://xiaomabufei.github.io/assets/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>小🐎不肥's Homepage</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="header-info">
+          <div class="name-title">Shuailei Ma</div>
+          <div class="role-info">
+            Final-year Ph.D. Student <span class="divider">|</span> Northeastern University, China
+          </div>
+          <div class="social-links">
+            <a href="mailto:xiaomabufei@gmail.com" class="social-btn"><img src="assets/icons/envelope.png" alt="Email" width="16" height="16"> Email</a>
+            <a href="https://scholar.google.com/citations?user=dNhzCu4AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <img src="assets/icons/google.png" alt="Scholar" width="16" height="16">
+              Scholar
+              <span class="citation-count" title="Google Scholar citations">⭐<span id="scholar-citations">782</span></span>
+            </a>
+            <a href="https://github.com/xiaomabufei" target="_blank" rel="noopener noreferrer" class="social-btn"><img src="assets/icons/github.png" alt="Github" width="16" height="16"> Github</a>
+          </div>
+        </div>
+        <div class="header-photo">
+          <img class="avatar" src="assets/profile.jpg" alt="Shuailei Ma 的个人照片">
+        </div>
+      </div>
+      <div class="bio-text-box">
+        I am a final-year Ph.D. student at <i>Northeastern University, China</i>. My research interests mainly lie in pre-training <i>visual generative foundation models</i>. I am also involved in pre-training <i>world models</i>, <i>Vision-Language-Action models (VLA)</i>, and <i>Video-Action models (VA)</i>.
+        <br><br>
+        I developed a large-scale pre-training framework for video diffusion models that achieves over 50% Model FLOPs Utilization (MFU) on a cluster of more than 1,000 NVIDIA H200 GPUs. Building on this framework, we developed <a href="https://technology.robbyant.com/lingbot-video" target="_blank" rel="noopener noreferrer">LingBot-Video</a>, the first open-source state-of-the-art video generation model based on a sparse Mixture-of-Experts (MoE) architecture. We also used this framework to explore the scaling behavior of video diffusion models, scaling up to 120B total parameters with 11B active parameters under our available compute budget.
+        <br><br>
+        🔬 I am currently in the final year of my Ph.D. and working as a research intern at <a href="https://www.robbyant.com/" target="_blank" rel="noopener noreferrer">Robbyant</a>, an embodied AI company under Ant Group, where I work with <a href="https://zkcys001.github.io/" target="_blank" rel="noopener noreferrer">Kecheng Zheng</a>.
+      </div>
+    </header>
+
+    <section>
+      <h2>🎓 Education</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">[2018-2022]</span>
+          <span>🎓 I received my B.E. degree from <i>Northeastern University, China</i>.</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[2022-Present]</span>
+          <span>💪 I am pursuing my Ph.D. degree at <i>Northeastern University, China</i>.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📰 News</h2>
+      <ul class="news-list">
+        <li class="news-item"><span class="news-date">[2026-07]</span><span>🔥 We released <a href="https://technology.robbyant.com/lingbot-video" target="_blank" rel="noopener noreferrer">LingBot-Video</a>, <a href="https://technology.robbyant.com/lingbot-vla-v2" target="_blank" rel="noopener noreferrer">LingBot-VLA 2.0</a>, and <a href="https://technology.robbyant.com/lingbot-va-v2" target="_blank" rel="noopener noreferrer">LingBot-VA 2.0</a>.<span class="news-note">LingBot-Video is the first open-source video generation model based on a sparse Mixture-of-Experts (MoE) architecture.</span></span></li>
+        <li class="news-item"><span class="news-date">[2026-01]</span><span>🔥 We released <a href="https://technology.robbyant.com/lingbot-vla" target="_blank" rel="noopener noreferrer">LingBot-VLA</a> and <a href="https://technology.robbyant.com/lingbot-world" target="_blank" rel="noopener noreferrer">LingBot-World</a>.</span></li>
+        <li class="news-item"><span class="news-date">[2025-02]</span><span>🎉 <a href="https://ant-research.github.io/lumos/" target="_blank" rel="noopener noreferrer">Lumos</a> was accepted by <i>CVPR 2025</i>.<span class="news-note">Lumos is a pure vision-based generative framework, which confirms the feasibility and the scalability of learning visual generative priors.</span></span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🗂️ Selected Projects</h2>
+
+      <details class="project-group" open>
+        <summary>
+          <span class="summary-title">♠ Generation &amp; World Models <span class="project-state" aria-hidden="true"></span></span>
+          <span class="project-preview-inline">
+            <span class="preview-item">🎬 Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence</span>
+            <span class="preview-item">🌍 Advancing Open-source World Models</span>
+            <span class="preview-item">✨ Learning Visual Generative Priors without Text</span>
+          </span>
+        </summary>
+        <div class="project-body">
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://technology.robbyant.com/lingbot-video" target="_blank" rel="noopener noreferrer" class="paper-title">🎬 Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence</a>
+                <div class="paper-authors"><u><b>Shuailei Ma</b></u>, Jiaqi Liao, Xinyang Wang, Jingjing Wang, Chaoran Feng, Zijing Hu, Chong Bao, Zichen Xi, Yuqi Gan, Weisen Wang, Yanhong Zeng, Qin Zhao, Zifan Shi, Wei Wu, Hao Ouyang, Qiuyu Wang, Shangzhan Zhang, Jiahao Shao, Yipengjing Sun, Liangxiao Hu, Lunke Pan, Nan Xue, Kecheng Zheng, Yinghao Xu, Xing Zhu, Yujun Shen, Ka Leong Cheng</div>
+                <div class="paper-desc">A DiT-based video pre-training paradigm with sparse MoE, robot-oriented data, and multi-dimensional rewards for embodied intelligence.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">Technical Report</span><a href="https://arxiv.org/abs/2607.07675" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/robbyant/lingbot-video" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://technology.robbyant.com/lingbot-video" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <video class="paper-img paper-video" data-src="assets/projects/lingbot-video-demo-web.mp4" muted loop playsinline preload="none" aria-label="LingBot-Video demo"></video>
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://technology.robbyant.com/lingbot-world" target="_blank" rel="noopener noreferrer" class="paper-title">🌍 Advancing Open-source World Models</a>
+                <div class="paper-authors">Robbyant Team, Zelin Gao, Qiuyu Wang, Yanhong Zeng, Jiapeng Zhu, Ka Leong Cheng, Yixuan Li, Hanlin Wang, Yinghao Xu, <u><b>Shuailei Ma</b></u>, Yihang Chen, Jie Liu, Yansong Cheng, Yao Yao, Jiayi Zhu, Yihao Meng, Kecheng Zheng, Qingyan Bai, Jingye Chen, Zehong Shen, Yue Yu, Xing Zhu, Yujun Shen, Hao Ouyang</div>
+                <div class="paper-desc">An open-source world simulator with high-fidelity dynamics, minute-long consistency, and real-time interaction.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">Technical Report</span><a href="https://arxiv.org/abs/2601.20540" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/robbyant/lingbot-world" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://technology.robbyant.com/lingbot-world" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <video class="paper-img paper-video" data-src="assets/projects/lingbot-world-homepage-web.mp4" muted loop playsinline preload="none" aria-label="LingBot-World homepage demo"></video>
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://ant-research.github.io/lumos/" target="_blank" rel="noopener noreferrer" class="paper-title">✨ Learning Visual Generative Priors without Text</a>
+                <div class="paper-authors"><u><b>Shuailei Ma</b></u>, Kecheng Zheng, Ying Wei, Wei Wu, Fan Lu, Yifei Zhang, Chen-Wei Xie, Biao Gong, Jiapeng Zhu, Yujun Shen</div>
+                <div class="paper-desc">A pure vision-based generative framework that confirms the feasibility and scalability of learning visual generative priors.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">CVPR 2025</span><a href="https://arxiv.org/abs/2412.07767" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/ant-research/lumos" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://ant-research.github.io/lumos/" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/lumos-demo.jpg" alt="Lumos teaser from its GitHub repository" loading="lazy">
+          </article>
+        </div>
+      </details>
+
+      <details class="project-group">
+        <summary>
+          <span class="summary-title">♠ Vision-Language-Action &amp; Video-Action Models <span class="project-state" aria-hidden="true"></span></span>
+          <span class="project-preview-inline">
+            <span class="preview-item">🤖 A Pragmatic VLA Foundation Model</span>
+            <span class="preview-item">🦾 From Foundation to Application: Improving VLA Models in Practice</span>
+            <span class="preview-item">🎞️ Native Video-Action Pretraining for Generalizable Robot Control</span>
+          </span>
+        </summary>
+        <div class="project-body">
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://technology.robbyant.com/lingbot-vla" target="_blank" rel="noopener noreferrer" class="paper-title">🤖 A Pragmatic VLA Foundation Model</a>
+                <div class="paper-authors">Wei Wu, Fan Lu, Yunnan Wang, Shuai Yang, Shi Liu, Fangjing Wang, Qian Zhu, He Sun, Yong Wang, <u><b>Shuailei Ma</b></u>, Yiyu Ren, Kejia Zhang, Hui Yu, Jingmei Zhao, Shuai Zhou, Zhenqi Qiu, Houlong Xiong, Ziyu Wang, Zechen Wang, Ran Cheng, Yong-Lu Li, Yongtao Huang, Xing Zhu, Yujun Shen, Kecheng Zheng</div>
+                <div class="paper-desc">A pragmatic VLA foundation model pre-trained on around 20,000 hours of real-world data from nine popular dual-arm robot configurations.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">Technical Report</span><a href="https://arxiv.org/abs/2601.18692" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/robbyant/lingbot-vla" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://technology.robbyant.com/lingbot-vla" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <video class="paper-img paper-video" data-src="https://gw.alipayobjects.com/v/huamei_u94ywh/afts/video/QRuOR75x-X0AAAAAhHAAAAgAfoeUAQBr" muted loop playsinline preload="none" aria-label="LingBot-VLA homepage demo"></video>
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://technology.robbyant.com/lingbot-vla-v2" target="_blank" rel="noopener noreferrer" class="paper-title">🦾 From Foundation to Application: Improving VLA Models in Practice</a>
+                <div class="paper-authors">Wei Wu, Fangjing Wang, Fan Lu, He Sun, Shi Liu, Yunnan Wang, Yibin Yan, Yong Wang, <u><b>Shuailei Ma</b></u>, Xinyang Wang, Yibin Liu, Shuai Yang, Tianxiang Zhou, Kejia Zhang, Lei Zhou, Cheng Su, Nan Xue, Bin Tan, Han Zhang, Youchao Zhang, Fei Liao, Xing Zhu, Yujun Shen, Kecheng Zheng</div>
+                <div class="paper-desc">LingBot-VLA 2.0 improves task and embodiment generalization, expands whole-body action spaces, and introduces predictive dynamics modeling.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">Technical Report</span><a href="https://arxiv.org/abs/2607.06403" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/robbyant/lingbot-vla-v2" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://technology.robbyant.com/lingbot-vla-v2" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <video class="paper-img paper-video" data-src="https://gw.alipayobjects.com/v/huamei_h1snpr/afts/file/qFneTbraZ54AAAAAibAAAAgADriIAQJr" muted loop playsinline preload="none" aria-label="LingBot-VLA 2.0 homepage demo"></video>
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://technology.robbyant.com/lingbot-va-v2" target="_blank" rel="noopener noreferrer" class="paper-title">🎞️ Native Video-Action Pretraining for Generalizable Robot Control</a>
+                <div class="paper-authors">Qihang Zhang, Lin Li, Luyao Zhang, Shuai Yang, Yiming Luo, Shuaiting Li, Ruilin Wang, Junke Wang, Jiahao Shao, Gangwei Xu, Jiaming Zhou, Yishu Shen, Yudong Jin, Fangyi Xu, <u><b>Shuailei Ma</b></u>, Jiaqi Liao, Guanxing Lu, Zifan Shi, Yongkun Wen, Yujie Zhao, Weixuan Tang, Xinyang Wang, Chaojian Li, Jiapeng Zhu, Ka Leong Cheng, Nan Xue, Xing Zhu, Yujun Shen, Yinghao Xu</div>
+                <div class="paper-desc">A video-action foundation model natively pre-trained for embodiment, featuring a semantic visual-action tokenizer, causal pre-training, sparse MoE, and real-time closed-loop control.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">Technical Report</span><a href="https://arxiv.org/abs/2607.08639" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/robbyant/lingbot-va" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://technology.robbyant.com/lingbot-va-v2" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <video class="paper-img paper-video" data-src="https://gw.alipayobjects.com/v/huamei_rbywqn/afts/file/omBWRaWNLTEAAAAAkWAAAAgADuaJAQJr" muted loop playsinline preload="none" aria-label="LingBot-VA 2.0 homepage demo"></video>
+          </article>
+        </div>
+      </details>
+
+      <details class="project-group">
+        <summary>
+          <span class="summary-title">♠ Multi-Modal Large Language Models <span class="project-state" aria-hidden="true"></span></span>
+          <span class="project-preview-inline">
+            <span class="preview-item">🐬 Aligned Better, Listen Better for Audio-Visual Large Language Models</span>
+            <span class="preview-item">🧩 CoReS: Orchestrating the Dance of Reasoning and Segmentation</span>
+            <span class="preview-item">🏠 LSceneLLM: Enhancing Large 3D Scene Understanding Using Adaptive Visual Preferences</span>
+          </span>
+        </summary>
+        <div class="project-body">
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://arxiv.org/abs/2504.02061" target="_blank" rel="noopener noreferrer" class="paper-title">🐬 Aligned Better, Listen Better for Audio-Visual Large Language Models</a>
+                <div class="paper-authors">Yuxin Guo, <u><b>Shuailei Ma</b></u>, Shijie Ma, Xiaoyi Bao, Chen-Wei Xie, Kecheng Zheng, Tingyu Weng, Siyang Sun, Yun Zheng, Wei Zou</div>
+                <div class="paper-desc">Dolphin aligns audio and visual information across spatial and temporal dimensions for fine-grained audio-visual understanding with reduced hallucination.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">ICLR 2025</span><a href="https://arxiv.org/abs/2504.02061" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/dolphin-demo.jpg" alt="Dolphin framework from the paper" loading="lazy">
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://chain-of-reasoning-and-segmentation.github.io/" target="_blank" rel="noopener noreferrer" class="paper-title">🧩 CoReS: Orchestrating the Dance of Reasoning and Segmentation</a>
+                <div class="paper-authors">Xiaoyi Bao, Siyang Sun, <u><b>Shuailei Ma</b></u>, Kecheng Zheng, Yuxin Guo, Guosheng Zhao, Yun Zheng, Xingang Wang</div>
+                <div class="paper-desc">A dual-chain framework that progressively connects multi-modal reasoning with segmentation to improve visual search under complex queries.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">ECCV 2024</span><a href="https://arxiv.org/abs/2404.05673" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/baoxiaoyi/CoReS" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a><a href="https://chain-of-reasoning-and-segmentation.github.io/" target="_blank" rel="noopener noreferrer" class="badge badge-link">Project Page</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/cores-demo.jpg" alt="CoReS method from its project page" loading="lazy">
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhi_LSceneLLM_Enhancing_Large_3D_Scene_Understanding_Using_Adaptive_Visual_Preferences_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer" class="paper-title">🏠 LSceneLLM: Enhancing Large 3D Scene Understanding Using Adaptive Visual Preferences</a>
+                <div class="paper-authors">Hongyan Zhi, Peihao Chen, Junyan Li, <u><b>Shuailei Ma</b></u>, Xinyu Sun, Tianhang Xiang, Yinjie Lei, Mingkui Tan, Chuang Gan</div>
+                <div class="paper-desc">An adaptive 3D vision-language framework that identifies task-relevant regions and magnifies fine-grained details for large-scene understanding.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">CVPR 2025</span><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhi_LSceneLLM_Enhancing_Large_3D_Scene_Understanding_Using_Adaptive_Visual_Preferences_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/Hoyyyaard/LSceneLLM" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/lscene-demo.jpg" alt="LSceneLLM teaser from the paper" loading="lazy">
+          </article>
+        </div>
+      </details>
+
+      <details class="project-group">
+        <summary>
+          <span class="summary-title">♠ Object Detection <span class="project-state" aria-hidden="true"></span></span>
+          <span class="project-preview-inline">
+            <span class="preview-item">⚓ FGAHOI: Fine-Grained Anchors for Human-Object Interaction Detection</span>
+            <span class="preview-item">🔭 CAT: LoCalization and IdentificAtion Cascade Detection Transformer for Open-World Object Detection</span>
+            <span class="preview-item">🧠 SKDF: A Simple Knowledge Distillation Framework for Distilling Open-Vocabulary Knowledge to Open-World Object Detector</span>
+          </span>
+        </summary>
+        <div class="project-body">
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://ieeexplore.ieee.org/document/10315071" target="_blank" rel="noopener noreferrer" class="paper-title">⚓ FGAHOI: Fine-Grained Anchors for Human-Object Interaction Detection</a>
+                <div class="paper-authors"><u><b>Shuailei Ma</b></u>, Yuefeng Wang, Shanze Wang, Ying Wei</div>
+                <div class="paper-desc">An end-to-end transformer framework that generates fine-grained anchors to improve human-object interaction detection under noisy backgrounds.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">TPAMI 2024</span><a href="https://ieeexplore.ieee.org/document/10315071" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a><a href="https://github.com/xiaomabufei/FGAHOI" target="_blank" rel="noopener noreferrer" class="badge badge-link">Code</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/fgahoi-demo.jpg" alt="FGAHOI framework from its GitHub repository" loading="lazy">
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://ieeexplore.ieee.org/document/10205045" target="_blank" rel="noopener noreferrer" class="paper-title">🔭 CAT: LoCalization and IdentificAtion Cascade Detection Transformer for Open-World Object Detection</a>
+                <div class="paper-authors"><u><b>Shuailei Ma</b></u>, Yuefeng Wang, Jiaqi Fan, Ying Wei, Thomas H. Li, Hongli Liu, Fanbing Lv</div>
+                <div class="paper-desc">A cascade detection transformer that decouples localization and identification and introduces self-adaptive pseudo-labeling for open-world object detection.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">CVPR 2023</span><a href="https://ieeexplore.ieee.org/document/10205045" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/cat-demo.jpg" alt="CAT framework from the paper" loading="lazy">
+          </article>
+          <article class="paper-card">
+            <div class="paper-content">
+              <div>
+                <a href="https://ieeexplore.ieee.org/document/11129928" target="_blank" rel="noopener noreferrer" class="paper-title">🧠 SKDF: A Simple Knowledge Distillation Framework for Distilling Open-Vocabulary Knowledge to Open-World Object Detector</a>
+                <div class="paper-authors"><u><b>Shuailei Ma</b></u>, Yuefeng Wang, Ying Wei, Jiaqi Fan, Enming Zhang, Xinyu Sun, Peihao Chen</div>
+                <div class="paper-desc">A simple knowledge distillation framework that transfers open-vocabulary knowledge from vision-language models to a language-agnostic open-world detector.</div>
+              </div>
+              <div class="tag-row"><span class="badge badge-venue">TPAMI 2025</span><a href="https://ieeexplore.ieee.org/document/11129928" target="_blank" rel="noopener noreferrer" class="badge badge-link">Paper</a></div>
+            </div>
+            <img class="paper-img" src="assets/projects/skdf-demo.jpg" alt="SKDF framework from its GitHub repository" loading="lazy">
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <section>
+      <h2>🧑‍💻 Professional Activities</h2>
+      <ul class="activities">
+        <li><strong>Conference Reviewer:</strong> CVPR, ICCV, ECCV, ICML, ICRA</li>
+        <li><strong>Journal Reviewer:</strong> TPAMI</li>
+      </ul>
+    </section>
+
+    <footer class="page-footer">
+      <div>© <span id="year">2026</span> <strong>Shuailei Ma</strong>. All rights reserved.</div>
+      <div class="footer-sub">Built for <a href="https://github.com/xiaomabufei">xiaomabufei.github.io</a> · Design adapted from <a href="https://www.falcary.com/" target="_blank" rel="noopener noreferrer">Falcary</a></div>
+    </footer>
+  </div>
+</body>
+</html>
