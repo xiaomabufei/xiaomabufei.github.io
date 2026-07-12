@@ -54,8 +54,11 @@ def main() -> int:
         citations = fetch_citations()
         update_html(citations)
     except Exception as error:
-        print(f"Scholar update failed: {error}", file=sys.stderr)
-        return 1
+        print(
+            f"Scholar update skipped; keeping the last verified count: {error}",
+            file=sys.stderr,
+        )
+        return 0
 
     print(f"Google Scholar citations updated to {citations}")
     return 0
